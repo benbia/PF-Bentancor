@@ -584,6 +584,14 @@ header {
         width: 200px;
     }
 
+    .evento__contenido {
+        flex-direction: column;
+    }
+
+    .evento__img {
+        align-self: center;
+    }
+
     .footer__index {
         display: flex;
         flex-direction: column;
