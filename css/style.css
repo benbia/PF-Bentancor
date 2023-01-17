@@ -34,6 +34,7 @@ header {
     align-self: flex-end;
     margin-right: 10px;
     width: 100%;
+    margin-bottom: 0px;
 }
 
 .header__img {
@@ -57,6 +58,10 @@ header {
     text-decoration: none;
     color: rgba(244, 132, 36, 70%);
     transition: 0.2s linear;
+}
+
+.menu__item:active, .menu__item:focus .menu__item--registro:active , .menu__item--registro:focus {
+    box-shadow: none;
 }
 
 .menu__item--registro {
@@ -186,9 +191,9 @@ header {
     margin: 1rem;
     margin-left: 2rem;
 }
-.evento {
+.evento__div {
    background-color: rgba(71, 165, 174, 100%);
-   width: 95%;
+   width: 60%;
    margin-left: 20px;
    border-radius: 25px;
 }
@@ -474,6 +479,7 @@ header {
         background-color: #f48424;
         flex-direction: column;
         height: 100%;
+        overflow-y: scroll;
     }
     
     .header__img {
@@ -555,7 +561,7 @@ header {
 
     
     .side-menu:checked ~ nav{
-        max-height: 100%;
+        max-height: 70%;
         transition: max-height 0.5s linear;
     }
     
@@ -584,6 +590,15 @@ header {
         width: 200px;
     }
 
+    .evento {
+        display: flex;
+        justify-content: center;
+    }
+
+    .evento__div {
+        width: 95%;
+        margin-left: 0px;
+    }
     .evento__contenido {
         flex-direction: column;
     }
