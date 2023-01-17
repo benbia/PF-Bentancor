@@ -63,14 +63,48 @@
         </section>
         <section class="main__section--empresas">
             <h2 class="main__h2">Empresas que nos apoyan</h2>
-            <div class="empresas">
-                <img src="./img/empresa1.jpg" alt="">
-                <img src="./img/empresa2.jpg" alt="">
-                <img src="./img/empresa3.jpg" alt="">
-                <img src="./img/empresa4.jpg" alt="">
-                <img src="./img/empresa5.jpg" alt="">
-                <img src="./img/empresa6.jpg" alt="">
-            </div>
+            <div id="carouselExample" class="carousel slide carousel-dark">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="./img/empresa1.jpg" class="card-img-top img_width" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="./img/empresa2.jpg" class="card-img-top img_width" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="./img/empresa3.jpg" class="card-img-top img_width" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="./img/empresa4.jpg" class="card-img-top img_width" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="./img/empresa5.jpg" class="card-img-top img_width" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="./img/empresa6.jpg" class="card-img-top img_width" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev boton_prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next boton_next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
     </main>
     <footer id="footer">
