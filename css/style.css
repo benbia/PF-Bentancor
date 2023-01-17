@@ -246,6 +246,10 @@ header {
     border-radius: 30px;
 }
 
+.position {
+    z-index: -1;
+}
+
 .card-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -624,7 +628,6 @@ header {
 
     .card {
         width: 200px;
-        justify-self: center;
     }
 
 
