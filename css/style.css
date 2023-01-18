@@ -497,6 +497,32 @@ header {
     margin-bottom:50px; 
 }
 
+.main__p::selection, .main__h2::selection, .main__ul li::selection,strong::selection, .main__p--beneficios::selection, .main__ul li a::selection, .main__h3::selection, .pub__item::selection, .main__p p::selection, .main__ul--inside li::selection {
+    background-color: #94949b;
+    color: white;
+}
+
+.footer__h2::selection, .footer__ul li::selection, .footer__p::selection, .footer__p--middle::selection, .evento__h3::selection, .evento__p::selection {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(244, 132, 36, 70%);
+}
+
+.card img::selection, h1::selection, .main__iframe iframe::selection {
+    background-color: rgba(148, 148, 155, 80%);
+}
+
+.footer__logo img::selection, .footer__iframe iframe::selection, .evento__img::selection, .footer__img::selection {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+ .evento__item::selection, .evento__ul li::selection{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(71, 165, 174, 70%) ;
+}
+
+/* rgba(71, 165, 174, 100%); azul
+ */
+
 
 /* ------ @media mobile ------ */
 
