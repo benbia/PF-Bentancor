@@ -1,3 +1,17 @@
 .pub {
     @extend .main__ul;
+
+    li {
+        margin-top: 6px;
+        margin-bottom: 6px; 
+    }
+    .pub__item {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.6);
+            cursor: pointer; 
+        }
+    }   
 }

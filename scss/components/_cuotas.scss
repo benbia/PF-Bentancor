@@ -1,0 +1,20 @@
+.main__ul--inside {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color:black;
+    margin: 1rem;
+    margin-left: 6rem;
+}
+
+.main__iframe {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px ;
+    margin-bottom: 40px;
+
+    iframe {
+        border-radius: 25px;
+        border: 8px solid $color-gris;
+    }
+}

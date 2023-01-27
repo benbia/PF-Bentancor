@@ -11,13 +11,12 @@
 }
 
 .main__p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 2rem;
-    color:black;
-    margin: 1rem;
-    margin-left: 2rem; 
-    margin-bottom: 1.5rem; 
+    @include p;
+    
+    strong {
+        font-weight: 500;
+    }
+    
 }
 
 .main__ul {
@@ -42,7 +41,7 @@
     
         .card {
             margin: 0.5rem .5em;
-            box-shadow: 2px 6px 8px 1px rgba(22, 22, 26, 0.18); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
             border: none;
             border-radius: 25px;
 
@@ -60,13 +59,4 @@
             }   
         }
     }
-}
-
-.boton_prev {
-    margin-left: 20px;
-}
-
-.boton_next {
-    margin-right: 20px;
-
 }
