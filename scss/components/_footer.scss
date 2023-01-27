@@ -1,0 +1,27 @@
+// footer pages
+
+.footer__div {
+    @include displayflex-footer;
+    width: 100%;
+    background-color: $color-naranja;
+    height: 200px;
+    margin-top: 40px;
+}
+
+//footer index
+
+#footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(244, 132, 36, 100%);
+
+    .footer__index {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.2fr 2fr;
+        grid-template-areas: 
+            "h2 h2"
+            "con iframe"
+        ;
+    }
+}

@@ -1,5 +1,11 @@
 // bases
 
+@import './bases/variables';
+@import './bases/mixin';
+
 //componentes
 
 @import './components/oldstyle';
+@import './components/footer';
+@import './components/header';
+@import './components/parallax';

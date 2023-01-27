@@ -1,0 +1,44 @@
+.parallax_index {
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),url("../img/index_parallax.jpg");
+    @include parallax;
+}
+
+.parallax_beneficios {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),url("../img/beneficios_parallax.jpg");
+    @include parallax;
+}
+
+.parallax_cuotas {
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),url("../img/cuotas_parallax.jpg");
+    @include parallax;
+}
+
+.parallax_publicaciones {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),url("../img/publicaciones_parallax.jpg");
+    @include parallax; 
+}
+
+.parallax_eventos {
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),url("../img/eventos_parallax.jpg");
+    @include parallax;
+}
