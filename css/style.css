@@ -257,47 +257,73 @@ header .header__img {
 header .side-menu {
   display: none;
 }
-@media screen and (max-width: 576px) {
-  header .side-menu:checked ~ nav {
-    max-height: 70%;
-    transition: max-height 0.5s linear;
-  }
+
+.menu__item:active, .menu__item:focus .menu__item--registro:active, .menu__item--registro:focus {
+  box-shadow: none;
 }
+
 @media screen and (max-width: 576px) {
-  header .side-menu:checked ~ .bars .bar-line {
-    background: transparent;
+  .menu {
+    list-style: none;
+    margin-right: 10px;
+    background-color: #f48424;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
   }
-}
-@media screen and (max-width: 576px) {
-  header .side-menu:checked ~ .bars .bar-line::before {
-    transform: rotate(-45deg);
-    top: 0;
+  .header__img {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 6px;
   }
-}
-@media screen and (max-width: 576px) {
-  header .side-menu:checked ~ .bars .bar-line::after {
-    transform: rotate(45deg);
-    top: 0;
+  .menu__item {
+    display: block;
+    padding: 20px;
+    margin: 7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+    border-radius: 25px;
   }
-}
-@media screen and (max-width: 576px) {
-  header .side-menu .bars {
+  .menu__item:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+  .menu__item--registro {
+    display: block;
+    padding: 20px;
+    margin: 7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+  .menu__item--registro:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+  .bars {
     cursor: pointer;
     float: right;
     padding: 20px 20px;
   }
-}
-@media screen and (max-width: 576px) {
-  header .side-menu .bars .bar-line {
+  .bar-line {
     background: #f48424;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
   }
-}
-@media screen and (max-width: 576px) {
-  header .side-menu .bars .bar-line::before {
+  .bar-line::before,
+  .bar-line::after {
     background: #f48424;
     content: "";
     display: block;
@@ -305,26 +331,29 @@ header .side-menu {
     position: absolute;
     transition: all 0.2s ease-out;
     width: 100%;
+  }
+  .bar-line::before {
     top: 5px;
   }
-}
-@media screen and (max-width: 576px) {
-  header .side-menu .bars .bar-line::after {
-    background: #f48424;
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    width: 100%;
+  .bar-line::after {
     top: -5px;
   }
+  .side-menu:checked ~ nav {
+    max-height: 70%;
+    transition: max-height 0.5s linear;
+  }
+  .side-menu:checked ~ .bars .bar-line {
+    background: transparent;
+  }
+  .side-menu:checked ~ .bars .bar-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .side-menu:checked ~ .bars .bar-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
 }
-
-.menu__item:active, .menu__item:focus .menu__item--registro:active, .menu__item--registro:focus {
-  box-shadow: none;
-}
-
 .parallax_index {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/index_parallax.jpg");
   height: 600px;
