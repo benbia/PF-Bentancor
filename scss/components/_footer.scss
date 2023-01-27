@@ -23,5 +23,92 @@
             "h2 h2"
             "con iframe"
         ;
+
+        @media screen and (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer__h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-weight: bold;
+            font-size: 3rem;
+            color: white;
+            margin: 1.3rem;
+            margin-left: 2rem;
+            grid-area: h2; 
+        }
+
+        .footer__content {
+            grid-area: con;
+
+            .footer__ul {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+                font-size: 2rem;
+                color:white;
+                margin: 1rem;
+                margin-left: 4rem;
+                margin-bottom: 30px;
+            }
+
+            .footer__p {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+                font-size: 1.5rem;
+                color:white;
+                margin: 0.3rem;
+                margin-left: 2rem;
+            }
+
+            .footer__logo {
+                @media screen and (max-width: 576px) {
+                    display: none;
+                }
+                img {
+                    height: 90px;
+                    margin-bottom: 30px;
+                    margin-left: 2rem;
+                    margin-top: 30px;  
+                }
+            }
+        }
+
+        .footer__iframe {
+            display: flex;
+            justify-content: center;
+
+            iframe {
+                border-radius: 25px;
+                margin-bottom: 40px;
+
+                @media screen and (max-width: 576px) {
+                    margin-top: 50px;
+                    width: 350px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .footer__logo--mobile {
+            display: none;
+
+            @media screen and (max-width: 576px) {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                height: 90px;
+                margin-bottom: 30px;
+                margin-left: 2rem;
+                margin-top: 30px;
+                
+                @media screen and (max-width: 576px) {
+                    height: 60px;
+                } 
+            }
+        } 
     }
 }

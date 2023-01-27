@@ -42,3 +42,23 @@
         ),url("../img/eventos_parallax.jpg");
     @include parallax;
 }
+
+// parallax display 
+
+.container_parallax {
+    width: 100%;
+    margin:auto;
+    display: table;
+    z-index: 0;
+
+    .container__h1 {
+        text-align: center;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 5rem;
+        display: table-cell;
+        vertical-align: middle;
+        z-index: 1;
+    }
+}

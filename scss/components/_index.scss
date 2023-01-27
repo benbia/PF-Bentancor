@@ -1,0 +1,72 @@
+.main__h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 3rem;
+    color:black;
+    margin: 1.3rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.main__p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color:black;
+    margin: 1rem;
+    margin-left: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.main__ul {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color:black;
+    margin: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 1.5rem; 
+}
+
+.carousel-inner {
+    padding: 1em;
+    
+    .position-index {
+        z-index: -1;
+    }
+    .card-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    
+        .card {
+            margin: 0.5rem .5em;
+            box-shadow: 2px 6px 8px 1px rgba(22, 22, 26, 0.18); 
+            border: none;
+            border-radius: 25px;
+
+            @media screen and (max-width: 576px) {
+                width: 200px; 
+            }
+
+            .img_width {
+                width: 400px;
+                border-radius: 30px;
+
+                @media screen and (max-width: 576px) {
+                    width: 200px; 
+                }
+            }   
+        }
+    }
+}
+
+.boton_prev {
+    margin-left: 20px;
+}
+
+.boton_next {
+    margin-right: 20px;
+
+}
