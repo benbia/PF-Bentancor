@@ -87,7 +87,7 @@
 @media screen and (max-width: 576px) {
   #footer .footer__index .footer__iframe iframe {
     margin-top: 50px;
-    width: 300px;
+    width: 80%;
     margin-bottom: 10px;
   }
 }
@@ -131,7 +131,7 @@ header {
   align-items: center;
   position: fixed;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   z-index: 2;
 }
@@ -406,9 +406,12 @@ header .side-menu {
 
 .container_parallax {
   width: 100%;
-  margin: auto;
+  margin: 0;
   display: table;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container_parallax .container__h1 {
   text-align: center;
@@ -416,9 +419,8 @@ header .side-menu {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 5rem;
-  display: table-cell;
-  vertical-align: middle;
   z-index: 1;
+  width: 100%;
 }
 
 .main__h2 {
@@ -557,6 +559,8 @@ header .side-menu {
   .evento .evento__div .evento__contenido .evento__img {
     margin-left: 0;
     align-self: center;
+    max-width: 80%;
+    height: auto;
   }
 }
 .evento .evento__div .evento__contenido .evento__ul {
