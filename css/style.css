@@ -87,7 +87,7 @@
 @media screen and (max-width: 576px) {
   #footer .footer__index .footer__iframe iframe {
     margin-top: 50px;
-    width: 350px;
+    width: 300px;
     margin-bottom: 10px;
   }
 }
@@ -484,6 +484,18 @@ header .side-menu {
 @media screen and (max-width: 576px) {
   .carousel-inner .card-wrapper .card .img_width {
     width: 200px;
+  }
+}
+
+.card {
+  margin: 0.5rem 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 25px;
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 300px;
   }
 }
 
