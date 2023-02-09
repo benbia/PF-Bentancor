@@ -62,5 +62,9 @@
         font-size: 5rem;
         z-index: 1;
         width: 100%;
+
+        @media screen and (max-width: 576px) {
+            font-size: 12vw;
+        }
     }
 }

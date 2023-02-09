@@ -422,6 +422,11 @@ header .side-menu {
   z-index: 1;
   width: 100%;
 }
+@media screen and (max-width: 576px) {
+  .container_parallax .container__h1 {
+    font-size: 12vw;
+  }
+}
 
 .main__h2 {
   font-family: "Poppins", sans-serif;
