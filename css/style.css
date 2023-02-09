@@ -487,6 +487,9 @@ header .side-menu {
   }
 }
 
+.evento {
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 576px) {
   .evento {
     display: flex;
@@ -540,6 +543,7 @@ header .side-menu {
 }
 @media screen and (max-width: 576px) {
   .evento .evento__div .evento__contenido .evento__img {
+    margin-left: 0;
     align-self: center;
   }
 }
@@ -550,11 +554,21 @@ header .side-menu {
   color: white;
   margin: 1rem;
   margin-left: 4rem;
+  margin-bottom: 20px;
+}
+.evento .evento__div .evento__contenido .evento__ul .evento__ul--certificados {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
+  margin: 1rem;
+  margin-left: 4rem;
+  margin-bottom: 0px;
 }
 .evento .evento__div .evento__contenido .evento__ul .evento__item {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
   text-decoration: none;
 }

@@ -1,9 +1,12 @@
 
 .evento {
+
+    margin-bottom: 20px;
     @media screen and (max-width: 576px) {
         display: flex;
         justify-content: center;
     }
+    
 
     .evento__div {
         background-color: $color-azul;
@@ -51,6 +54,7 @@
                 border-radius: 25px;
 
                 @media screen and (max-width: 576px) {
+                    margin-left: 0;
                     align-self: center;
                 }
             }
@@ -61,12 +65,23 @@
                 font-size: 2rem;
                 color:white;
                 margin: 1rem;
-                margin-left: 4rem; 
+                margin-left: 4rem;
+                margin-bottom: 20px;
+                
+                .evento__ul--certificados {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300;
+                    font-size: 2rem;
+                    color:white;
+                    margin: 1rem;
+                    margin-left: 4rem;
+                    margin-bottom: 0px; 
+                }
                 
                 .evento__item {
                     color: white;
                     font-family: 'Poppins', sans-serif;
-                    font-weight: 400;
+                    font-weight: 500;
                     font-size: 2rem;
                     text-decoration: none;
 
