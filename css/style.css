@@ -1,4 +1,4 @@
-.evento .evento__div .evento__titulo .evento__h3 {
+.main__h3, .evento .evento__div .evento__titulo .evento__h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2rem;
@@ -151,7 +151,7 @@ header .header__nav .menu {
   display: flex;
   list-style: none;
   align-self: flex-end;
-  margin-right: 10px;
+  margin-right: 25px;
   width: 100%;
   margin-bottom: 0px;
 }
@@ -533,6 +533,7 @@ header .side-menu {
   justify-content: space-between;
   background-color: #f48424;
   border-radius: 25px;
+  margin-bottom: 25px;
 }
 .evento .evento__div .evento__titulo .evento__p {
   font-family: "Poppins", sans-serif;
