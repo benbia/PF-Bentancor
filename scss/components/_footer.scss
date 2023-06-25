@@ -11,18 +11,18 @@
 //footer index
 
 #footer {
-    margin-top: 50px;
+    margin-top: 70px;
     width: 100%;
     background-color: rgba(244, 132, 36, 100%);
 
     .footer__index {
         display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        grid-template-rows: 0.2fr 2fr;
+        grid-template-columns: 2;
+        grid-template-rows: 1;
         grid-template-areas: 
-            "h2 h2"
-            "con iframe"
+        "con img"
         ;
+       height: 250px;
 
         @media screen and (max-width: 576px) {
             display: flex;
@@ -33,11 +33,12 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 4rem;
             color: white;
             margin: 1.3rem;
-            margin-left: 2rem;
+            margin-left: 3rem;
             grid-area: h2; 
+            margin-top: 3rem;
         }
 
         .footer__content {
@@ -59,37 +60,28 @@
                 font-size: 1.5rem;
                 color:white;
                 margin: 0.3rem;
-                margin-left: 2rem;
+                margin-left: 3rem;
             }
 
+            
+        }
+
+            
+
             .footer__logo {
+                grid-area: img;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 @media screen and (max-width: 576px) {
                     display: none;
                 }
                 img {
-                    height: 90px;
-                    margin-bottom: 30px;
-                    margin-left: 2rem;
-                    margin-top: 30px;  
+                    height: 110px;  
                 }
             }
-        }
 
-        .footer__iframe {
-            display: flex;
-            justify-content: center;
 
-            iframe {
-                border-radius: 25px;
-                margin-bottom: 40px;
-
-                @media screen and (max-width: 576px) {
-                    margin-top: 50px;
-                    width: 80%;
-                    margin-bottom: 10px;
-                }
-            }
-        }
 
         .footer__logo--mobile {
             display: none;

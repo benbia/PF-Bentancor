@@ -13,6 +13,7 @@
         width: 60%;
         margin-left: 20px;
         border-radius: 25px;
+        margin-bottom: 25px;
 
         @media screen and (max-width: 576px) {
             width: 95%;
@@ -62,38 +63,61 @@
                 }
             }
             
-            .evento__ul {
-                font-family: 'Poppins', sans-serif;
-                font-weight: 300;
-                font-size: 2rem;
-                color:white;
-                margin: 1rem;
-                margin-left: 4rem;
-                margin-bottom: 20px;
-                
-                .evento__ul--certificados {
+                .evento__ul {
                     font-family: 'Poppins', sans-serif;
                     font-weight: 300;
                     font-size: 2rem;
                     color:white;
                     margin: 1rem;
                     margin-left: 4rem;
-                    margin-bottom: 0px; 
-                }
-                
-                .evento__item {
-                    color: white;
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 500;
-                    font-size: 2rem;
-                    text-decoration: none;
-
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.8);
-                        cursor: pointer;
+                    margin-bottom: 20px;
+                    
+                    .evento__ul--certificados {
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 300;
+                        font-size: 2rem;
+                        color:white;
+                        margin: 1rem;
+                        margin-left: 4rem;
+                        margin-bottom: 0px; 
                     }
-                } 
-            }
+                    
+                    .evento__item {
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        text-decoration: none;
+    
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.8);
+                            cursor: pointer;
+                        }
+                    } 
+                }
         }
     }
+}
+
+
+.lista_video {
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 576px) {
+        align-items: center;
+    }
+.video_evento {
+    width: 80%;
+    border: 8px solid $color-gris;
+    border-radius: 25px;
+    margin-left: 20px;
+
+    @media screen and (max-width: 576px) {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    
+}
 }

@@ -8,7 +8,7 @@
     <meta name="keywords" content="Técnicos, radiología, ATRI, Beneficios, Publicaciones, Contacto, Eventos, Certificados, Nosotros, Uruguay, Cuotas, Pago, Descuentos, Radiologos, Tesis, Jornadas, Congresos, Materiales">
     <title>ATRI | Inicio - Quienes somos/Contacto </title>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- tipografias -->
@@ -19,6 +19,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CX5R1X2G83"></script>
+    
 </head>
 
 <body>
@@ -153,19 +157,15 @@
     </main>
     <footer id="footer">
         <div class="footer__index">
-            <h2 class="footer__h2" id="contacto">Contacto</h2>
-            <div class="footer__content">    
+            <div class="footer__content"> 
+                <h2 class="footer__h2" id="contacto">Contacto</h2>   
                 <ul class="footer__ul">
                     <li>Montevideo - Uruguay</li>
                     <li>Correo electrónico: uruimagen@gmail.com</li>
                 </ul>
-                <p class="footer__p">Comunícate con nosotros, mandanos tu consulta, tu idea. Estamos a tu disposición.</p>
-                <div class="footer__logo">
-                    <img src="./img/logo_atri_conletras_blanco.png" alt="logo atri con letras blancas sin fondo">
-                </div>
             </div>
-            <div data-aos="zoom-in" class="footer__iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.6032975278517!2d-56.151739!3d-34.8913067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80fdc0c7f5e1%3A0xf32f366a7102f1bf!2sHospital%20de%20Cl%C3%ADnicas%20Dr.%20Manuel%20Quintela!5e0!3m2!1ses-419!2suy!4v1672615564242!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer__logo">
+                <img src="./img/logo_atri_conletras_blanco.png" alt="logo atri con letras blancas sin fondo">
             </div>
             <div class="footer__logo--mobile">
                 <img src="./img/logo_atri_conletras_blanco.png" alt="logo atri con letras blancas sin fondo">
@@ -174,6 +174,15 @@
     </footer>
 
     <!-- scrpipts -->
+    <script src="js/script.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CX5R1X2G83');
+    </script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

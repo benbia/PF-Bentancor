@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CX5R1X2G83"></script>
 </head>
 <body>
     <header id="header">
@@ -44,22 +46,46 @@
         <section class="evento">
             <div class="evento__div">
                 <div class="evento__titulo">
+                    <h3 class="evento__h3">Jornada Académica 2023</h3>
+                    <p class="evento__p">Fecha: 2/09/2023</p>
+                </div>
+                <div class="evento__p evento__contenido ">
+                    <img class="evento__img" src="../img/Evento Minas 2023.jpg" alt="banner de la jornada 2023 de imagenologia en rivera">
+                    <ul class="evento__ul">
+                        <li><a target="_blank" class="evento__item" href="https://forms.gle/4Kha6cs618KH4ecM8" target="_blank">Pre-inscripción</a></li>
+                        <li><a target="_blank" class="evento__item" href="https://forms.gle/tMutxsSNsSmKsijH7">Registro de pago</a></li>
+                        <!-- <li>Certificados:</li>
+                        <ul class="evento__ul--certificados">
+                            <li><a target="_blank" class="evento__item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
+                            <li><a target="_blank" class="evento__item" href="https://drive.google.com/drive/folders/1-JUcI2_R0hreMYgwB8CuEQQNczJR6_nK?usp=share_link">Bachiller</a></li>
+                            <li><a target="_blank" class="evento__item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Médicos</a></li>
+                            <li><a target="_blank" class="evento__item" href="https://drive.google.com/drive/folders/1ePXARy3AHmR_dgpFNacmOfzg3YN4YTa7?usp=share_link">Otros</a></li>
+                        </ul> -->
+                    </ul>
+                </div>
+            </div> 
+            <div class="evento__div">
+                <div class="evento__titulo">
                     <h3 class="evento__h3">Jornada Académica de Imagenología - San José</h3>
                     <p class="evento__p">Fecha: 11/03/2023</p>
                 </div>
                 <div class="evento__p evento__contenido ">
-                    <img class="evento__img" src="../img/banner_sanjose_2023.jpeg" alt="banner de la jornada 2022 de imagenologia en rivera">
-                    <ul class="evento__ul">
-                        <li><a target="_blank" class="evento__item" href="https://drive.google.com/file/d/1tgWfzgidAbZOkFd7r6IJTR1Ju2d3vdSk/view" target="_blank">Información y programa</a></li>
-                        <li><a target="_blank" class="evento__item" href="https://docs.google.com/forms/d/e/1FAIpQLSdoF6iPZJbwmi-ZSeW3EMPKJL7_fLy3THPiCWDKcbuHl5VtFg/viewform">Pre-Incripción (Cupos limitados)</a></li>
-                        <li>Certificados (Proximamente)</li>
-                        <!-- <ul class="evento__ul">
-                            <li><a target="_blank" class="evento__item" href="/">Licenciados</a></li>
-                            <li><a target="_blank" class="evento__item" href="/">Bachiller</a></li>
-                            <li><a target="_blank" class="evento__item" href="/">Médicos</a></li>
-                            <li><a target="_blank" class="evento__item" href="/">Otros</a></li>
-                        </ul> -->
-                    </ul>
+                    <img class="evento__img" src="../img/programa_san_jose.jpeg" alt="banner de la jornada 2022 de imagenologia en rivera">
+                    <div class="lista_video">
+                        <ul class="evento__ul">
+                            <!-- <li><a target="_blank" class="evento__item" href="https://drive.google.com/file/d/1tgWfzgidAbZOkFd7r6IJTR1Ju2d3vdSk/view" target="_blank">Información y programa</a></li>
+                            <li><a target="_blank" class="evento__item" href="https://docs.google.com/forms/d/e/1FAIpQLSdoF6iPZJbwmi-ZSeW3EMPKJL7_fLy3THPiCWDKcbuHl5VtFg/viewform">Pre-Incripción (Cupos limitados)</a></li> -->
+                            <li>Certificados</li>
+                            <ul class="evento__ul">
+                                <li><a target="_blank" class="evento__item" href="https://drive.google.com/drive/folders/1K124MhbmEACK4Gj4pSTZLmDDJjKcEHYl?usp=share_link">Estudiantes</a></li>
+                                <li><a target="_blank" class="evento__item" href="https://drive.google.com/drive/folders/1ndZ8F-y88md9mDxqO_BtDpjypvlsFSW6?usp=share_link">Licenciados</a></li>
+                                <li><a target="_blank" class="evento__item" href="https://drive.google.com/drive/folders/1DAd6Vtz_z7c9dImTQ6p6LYJhyJZ1vDUy?usp=share_link">Médicos</a></li>
+                            </ul>
+                        </ul>
+                        <video controls autoplay muted class="video_evento">
+                            <source src="../videos/video_san_jose.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div> 
         </section>
@@ -93,6 +119,13 @@
             <p class="footer__p--middle">ATRI 2022</p>
         </div>
     </footer>
-    
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CX5R1X2G83');
+    </script>
 </body>
 </html>
